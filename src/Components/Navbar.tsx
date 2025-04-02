@@ -20,7 +20,7 @@ const Navbar = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
-      <button onClick={() => navigate("/about", { replace: true })}>
+      <button onClick={() => navigate("/About", { replace: true })}>
         Get Started
       </button>
     </div>
