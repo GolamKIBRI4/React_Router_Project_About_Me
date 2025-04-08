@@ -1,0 +1,28 @@
+{
+    "jobs":[
+        {
+            "id":1,
+            "title":"Jr.React Developer",
+            "Salary":30000,
+            "Location":"London UK"
+        },
+        {
+            "id":2,
+            "title":"Jr.React Developer",
+            "Salary":30000,
+            "Location":"Dhaka"
+        },
+        {
+            "id":3,
+            "title":"Jr.React Developer",
+            "Salary":30000,
+            "Location":"Chittagong"
+        },
+        {
+            "id":4,
+            "title":"Jr.React Developer",
+            "Salary":30000,
+            "Location":"Comilla"
+        }
+    ]
+}
