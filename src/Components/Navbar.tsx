@@ -1,10 +1,10 @@
-import logo from "../assets/neutral.png";
+import logo from "../assets/router.png";
 import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className="navBar">
-      <img style={{ width: "60px", height: "auto" }} src={logo}></img>
+      <img style={{ width: "60px", height: "auto"  }} src={logo}></img>
       <ul>
         <NavLink to={"/"}>
           <li>Home</li>
