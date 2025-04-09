@@ -58,6 +58,7 @@ a.active{
   padding-bottom: 20px;
   gap: 20px;
   
+  
 }
 .contact_button button{
   background: #000;
@@ -65,7 +66,7 @@ a.active{
   border: 0;
   outline: 0;
   padding: 10px 15px;
-  margin-top: 10px;
+  margin-top: 5px;
   border-radius: 12px;
   cursor: pointer;
   
@@ -103,4 +104,58 @@ a.active{
   margin-top: 10px;
   border-radius: 12px;
   cursor: pointer;
+}
+
+
+.contactForm {
+  max-width: 600px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+  font-family: inherit;
+}
+
+.contactForm textarea {
+  min-height: 120px;
+}
+
+.contactForm button {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: 0;
+  outline: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  align-self: flex-start;
+  transition: background 0.3s ease;
+  margin: auto;
+}
+
+.contactForm button:hover {
+  background: #333;
+}
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

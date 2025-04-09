@@ -1,7 +1,7 @@
 const ContactForm = () => {
   return (
     <div>
-      <form>
+      <form className="contactForm">
         <input type="text" placeholder="Name" />
         <br />
         <input type="email" placeholder="Email" />
