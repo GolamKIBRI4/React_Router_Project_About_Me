@@ -4,10 +4,10 @@ const Error = () => {
   const error = useRouteError() as Error;
   const navigator=useNavigate()
   return (
-    <div>
+    <div  style={{display:"flex", flexDirection:"column" ,alignItems:"center"}}>
       <h3>An error occured</h3>
-      <p>{error.message}</p>
-      <button onClick={()=>{navigator('/')}}>Go back Home</button>
+      <p>{error.name}</p>
+      <button className="btn" onClick={()=>{navigator('/')}} >Go back Home</button>
     </div>
   );
 };
