@@ -4,7 +4,7 @@ interface Props {
   description: string;
   MaxWord?: number;
 }
-const JobDescrip = ({ description, MaxWord = 20 }: Props) => {
+const JobDescription = ({ description, MaxWord = 20 }: Props) => {
   const [isExpand, setIsExpand] = useState(false);
 
   if (description.length <= MaxWord) return <p>{description}</p>;
@@ -21,4 +21,4 @@ const JobDescrip = ({ description, MaxWord = 20 }: Props) => {
   );
 };
 
-export default JobDescrip;
+export default JobDescription;

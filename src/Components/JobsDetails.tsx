@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import JobDescrip from "./jobDescrip";
+import JobDescription from "./JobDescription";
 
 import { Job } from "../pages/Jobs";
 
@@ -23,8 +23,7 @@ const JobsDetails = () => {
         </p>
         <p>
           <b>Description:</b>
-
-          <JobDescrip description={jobsDetail.description} />
+          <JobDescription description={jobsDetail.description} />
         </p>
         <button>Apply Now</button>
       </div>
