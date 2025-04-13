@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div className="navBar">
+    <div className="navBar-content">
       <img style={{ width: "60px", height: "auto"  }} src={logo}></img>
       <ul>
         <NavLink to={"/"}>

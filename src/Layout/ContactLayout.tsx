@@ -3,7 +3,7 @@ import Contact from "../pages/Contact";
 
 const ContactLayout = () => {
   return (
-    <div>
+    <div className="contact-container">
       <Contact />
       <Outlet />
     </div>

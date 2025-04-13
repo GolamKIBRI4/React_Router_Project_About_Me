@@ -1,10 +1,22 @@
-.navBar{
-width: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 2%;
-}
+.navBar-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items:center; 
+ 
+  
+  padding-bottom: "20px";
+  }
+  .navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+  }
 .navBar ul{
   padding:10px 30px;
   border-radius: 30px;
@@ -24,7 +36,7 @@ a.active{
 .navBar button{
   background: #000;
  color: #fff;
- padding: 12px 25px;
+ padding: 13px 25px;
  border: 0;
  outline: 0;
  border-radius: 35px;
@@ -53,10 +65,12 @@ a.active{
 .contact_button{
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
-  padding-bottom: 20px;
+  width: 50%;
   gap: 20px;
+
+  
   
   
 }
@@ -157,8 +171,9 @@ a.active{
 }
 .contact-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  padding: 5%;
+  
 }
 
 .btn{
@@ -172,4 +187,70 @@ a.active{
   border-radius: 12px;
   cursor: pointer;
 
+}
+
+
+
+
+
+:root {
+  --navbar-height: 70px; /* Adjust to your .navBar height */
+}
+
+/* Make sure body doesn't scroll */
+body, html, #root {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-layout {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Layout below NavBar */
+.content-container {
+  display: flex;
+  position: absolute;
+  top: var(--navbar-height);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Sidebar (Aside) */
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Optional Responsive Behavior */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .main-content {
+    order: 1;
+  }
 }
