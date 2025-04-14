@@ -1,7 +1,53 @@
 const About = () => {
   return (
     <div>
-      <h1>This Is About</h1>
+      <div className="page-layout">
+        <aside className="sidebar">
+          {/* Example sidebar content */}
+          <h3>Navigation</h3>
+          <ul>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+            <li>Link A</li>
+            <li>Link B</li>
+          </ul>
+        </aside>
+
+        <main className="main-content">
+          {/* Example main content */}
+          <h1>Welcome to About</h1>
+          <p>Here's the main content area.</p>
+          <div style={{ height: "2000px" }}>Scroll me</div>
+        </main>
+      </div>
     </div>
   );
 };
