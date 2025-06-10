@@ -9,8 +9,7 @@ const ContactLayout = () => {
       </aside>
       <main className="main-content">
       <Outlet />
-      </main>
-      
+      </main>  
     </div>
   );
 };

@@ -7,10 +7,11 @@ const RootLayout = () => {
       <div className="navBar">
         <Navbar />
       </div>
-
+      
       <Outlet />
     </div>
   );
 };
 
 export default RootLayout;
+ 
